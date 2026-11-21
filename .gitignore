@@ -1,0 +1,4 @@
+node_modules
+dist
+# Word list from the textbook (copyrighted) - keep out of the repo while it is public
+public/vocab.tsv
