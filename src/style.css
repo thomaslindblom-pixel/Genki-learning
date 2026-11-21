@@ -449,3 +449,8 @@ input[type='range'] {
 .grade.easy {
   background: var(--easy);
 }
+
+/* Break Japanese phrases at the spaces (おはよう ございます), not in the middle of a word. */
+.jp {
+  word-break: keep-all;
+}

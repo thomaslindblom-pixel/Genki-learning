@@ -551,7 +551,7 @@ function ImportVocab(props: { error: string | null; onImported: (w: Word[]) => v
         </p>
         <FileButton
           label="Import word list"
-          accept=".tsv,.txt,text/tab-separated-values,text/plain"
+          accept="*/*"
           onText={async (text) => {
             try {
               const w = parseVocab(text);
@@ -690,7 +690,7 @@ function SettingsScreen(props: {
       <FileButton
         label="Import word list"
         primary={false}
-        accept=".tsv,.txt,text/tab-separated-values,text/plain"
+        accept="*/*"
         onText={async (t) => {
           try {
             const w = parseVocab(t);
